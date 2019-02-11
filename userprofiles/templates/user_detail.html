@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div>
+<table>
+<tr>
+<td style="width:50%">
+<h3><a href="{% url 'logged_out_user'%}">Candidate Logout </a></h3>
+</td>
+<td>
+<h3><a href="{% url 'reset_request'%}">Request Password Reset</a></h3>
+</td>
+</tr>
+</table>		
+    <h3>Candidate Profile for: {{ user.name|capfirst}}</h3>
+    <p>Age: {{ user.age }}</p>
+    <p>Gender: {{ user.sex }}</p>
+	{% if userPositions %}
+    <p>Previous positions held...</p>
+    {% endif %}
+	<ul>
+		{% for pos in userPositions %}
+		<li><h4>{{pos.job_title}}</h4></li>
+		<li><p>Description:<p>{{pos.description}}</p></li>
+		<li><p>Start Date:{{pos.start_date|date:"M d Y" }}</p></li>
+		<li><p>End Date:{{pos.end_date|date:"M d Y" }}</p></li>
+		{% endfor %}
+	</ul>
+</div>
+{% endblock %}

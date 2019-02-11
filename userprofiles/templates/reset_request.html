@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div><h3><a href="{% url 'user_detail'%}">Back to My Details>></a></h3>
+    <h3>Password Reset Request Received! </h3>
+    <p>Thank you {{ user.name|capfirst}}.</p><p> Your new password will be emailed to you in the next few minutes. </p><p>Remember to check your junk mail folder, otherwise get in touch.</p>
+</div>
+{% endblock %}

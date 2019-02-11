@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block content %}
+<h3><a href="{% url 'login'%}">Candidate Login</a></h3>
+<p>If you are one of our candidates, then you can login (above) to view all your details.</p>
+<p>Here is a list of all registered candidates with just a few of their details.</p>
+<div>
+    {% for user in users %}
+    <div class="petname">
+        <h3>{{ user.name|capfirst}}</h3>
+        <p class="hidden">Username: {{ user.username }}</p>
+        <p class="hidden">Gender: {{ user.sex }}</p>
+        <p class="hidden">Age: {{ user.age }}</p>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}

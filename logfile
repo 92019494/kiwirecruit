@@ -1,0 +1,6 @@
+[11/Feb/2019 16:16:35] WARNING [userprofiles.models:18] login failed for: regt
+[11/Feb/2019 16:16:50] WARNING [userprofiles.models:18] login failed for: regt
+[11/Feb/2019 16:17:10] WARNING [userprofiles.models:18] login failed for: regt
+[11/Feb/2019 16:17:13] WARNING [userprofiles.models:18] login failed for: regt
+[11/Feb/2019 16:17:18] WARNING [userprofiles.models:18] login failed for: regt
+[11/Feb/2019 16:17:26] WARNING [userprofiles.views:44] Password change request made for regt

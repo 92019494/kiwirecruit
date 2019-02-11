@@ -1,0 +1,47 @@
+{% load static %}
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <title>Home - Kiwirecruit</title>
+        <link rel="stylesheet" id="ample-style-css" href="{% static 'style.css' %}" type="text/css" media="all">
+    </head>
+    <body class="wide">
+        <div id="page" class="hfeed site">
+            <header>
+                <div class="header">
+                    <div class="main-head-wrap inner-wrap clearfix">
+                        <div id="header-logo-image">
+                            <a href="/">
+                                <img src="{% static 'images/logo.png' %}" alt="Kiwirecruit">
+                            </a>
+                        </div>
+                        <div id="header-text" class="">
+                            <h1 id="site-title">
+                                <a href="/" title="Kiwirecruit" rel="home">Kiwirecruit</a>
+                            </h1>
+                            <p>Finding the best people for the job.</p>
+                        </div>
+                    </div>
+                    <img src="{% static 'images/header.jpg' %}" alt="Kiwirecruit">
+                </div>
+            </header>
+            <div class="main-wrapper">
+                <div class="single-page clearfix">
+                    <div class="inner-wrap">
+                        <p>Kiwirecruit strives to find the best talent for any role. We apply the latest in recruitment technology, along with many years experience, to find great talent, whilst maintaining excellent relationships with our clients and their staff.</p>
+                        <div>
+                        {% block content %}
+						{% endblock %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer id="colophon">
+                <div class="inner-wrap">
+                    Kiwirecruit is a fictitious brand created by Computer Power Plus, solely for the purpose of training. All products and people associated with Kiwirecruit are also fictitious. Any resemblance to real brands, products, or people is purely coincidental.
+                </div>
+            </footer>
+        </div>
+		<script src="{% static 'main.js' %}"></script>
+    </body>
+</html>
