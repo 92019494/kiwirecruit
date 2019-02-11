@@ -4,3 +4,15 @@
 [11/Feb/2019 16:17:13] WARNING [userprofiles.models:18] login failed for: regt
 [11/Feb/2019 16:17:18] WARNING [userprofiles.models:18] login failed for: regt
 [11/Feb/2019 16:17:26] WARNING [userprofiles.views:44] Password change request made for regt
+[11/Feb/2019 16:26:32] WARNING [userprofiles.models:18] login failed for: regt
+[11/Feb/2019 16:26:41] WARNING [userprofiles.views:49] Password change request made for regt
+[11/Feb/2019 16:26:45] INFO [userprofiles.views:39]  has logged out
+[11/Feb/2019 16:27:41] WARNING [userprofiles.models:18] login failed for: zach
+[11/Feb/2019 16:27:53] WARNING [userprofiles.views:49] Password change request made for zach
+[11/Feb/2019 16:28:01] INFO [userprofiles.views:39]  has logged out
+[11/Feb/2019 16:28:42] WARNING [userprofiles.views:39]  has logged out
+[11/Feb/2019 16:29:04] WARNING [userprofiles.models:18] login failed for: regt
+[11/Feb/2019 16:29:13] INFO [userprofiles.views:39]  has logged out 
+[11/Feb/2019 16:30:36] WARNING [userprofiles.models:18] login failed for: regt
+[11/Feb/2019 16:30:48] WARNING [userprofiles.views:50] Password change request made for regt
+[11/Feb/2019 16:30:51] INFO [userprofiles.views:38] regt has logged out

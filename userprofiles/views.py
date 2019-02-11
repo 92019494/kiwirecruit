@@ -33,7 +33,13 @@ def login(request):
     return render(request, 'login.html')
 
 def logout(request):
+    log.info('{name} has logged out'.format(
+
+        name = request.user.username
+
+    ))
     django_logout(request)
+
     return render(request, 'logged_out.html')
 
 def reset_request(request):
